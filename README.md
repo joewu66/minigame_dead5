@@ -1,4 +1,5 @@
-# minigame_dead5
+# Kepler2025_minigame_dead5
+
 This project is aiming to create the best Kepler Minigame.
 
 Team member: ratiozhang(leader), shawnyxhe(sponsor), averywydai, frankyhyu, joehywu, monzeonhe, ryanzqzhao, violetfu
