@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://crf5sukp8ih7j"]
+
+[ext_resource type="Texture2D" uid="uid://c6b6u4nbjcvrq" path="res://AssetBundle/Sprites/ForestBackground.png" id="1_64nw0"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Background 1" type="Sprite2D" parent="."]
+position = Vector2(-120, -1)
+texture = ExtResource("1_64nw0")
+
+[node name="Background 2" type="Sprite2D" parent="."]
+position = Vector2(120, -1)
+texture = ExtResource("1_64nw0")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.41, 2.41)
