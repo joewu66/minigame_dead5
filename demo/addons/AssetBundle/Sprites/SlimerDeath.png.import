@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d07g7a5e81hot"
-path="res://.godot/imported/Foxy.png-b85bcfba48b331193357b8cd47a69a83.ctex"
+uid="uid://b0ntt7xsd7lrm"
+path="res://.godot/imported/SlimerDeath.png-68096f1f57e2d3a1d93f8e4de5f2041a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetBundle/Sprites/Foxy.png"
-dest_files=["res://.godot/imported/Foxy.png-b85bcfba48b331193357b8cd47a69a83.ctex"]
+source_file="res://addons/AssetBundle/Sprites/SlimerDeath.png"
+dest_files=["res://.godot/imported/SlimerDeath.png-68096f1f57e2d3a1d93f8e4de5f2041a.ctex"]
 
 [params]
 

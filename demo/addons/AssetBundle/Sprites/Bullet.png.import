@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0ntt7xsd7lrm"
-path="res://.godot/imported/SlimerDeath.png-8f72f20690b218297dd2b46e2f1a3e92.ctex"
+uid="uid://bqsqyawjhrhhf"
+path="res://.godot/imported/Bullet.png-2389d803cbf80e8a82df72bb6f729848.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetBundle/Sprites/SlimerDeath.png"
-dest_files=["res://.godot/imported/SlimerDeath.png-8f72f20690b218297dd2b46e2f1a3e92.ctex"]
+source_file="res://addons/AssetBundle/Sprites/Bullet.png"
+dest_files=["res://.godot/imported/Bullet.png-2389d803cbf80e8a82df72bb6f729848.ctex"]
 
 [params]
 

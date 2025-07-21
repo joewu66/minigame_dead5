@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqsqyawjhrhhf"
-path="res://.godot/imported/Bullet.png-6c1277493948f984157dce27bf48b185.ctex"
+uid="uid://c7lwmxqr3ldsf"
+path="res://.godot/imported/Slimer.png-b39c9f38a891bcdbbf4424d4fd504e93.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetBundle/Sprites/Bullet.png"
-dest_files=["res://.godot/imported/Bullet.png-6c1277493948f984157dce27bf48b185.ctex"]
+source_file="res://addons/AssetBundle/Sprites/Slimer.png"
+dest_files=["res://.godot/imported/Slimer.png-b39c9f38a891bcdbbf4424d4fd504e93.ctex"]
 
 [params]
 

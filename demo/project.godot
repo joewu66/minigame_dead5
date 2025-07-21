@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="dead5_demo"
+run/main_scene="uid://crf5sukp8ih7j"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 

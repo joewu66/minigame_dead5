@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://crf5sukp8ih7j"]
 
-[ext_resource type="Texture2D" uid="uid://c6b6u4nbjcvrq" path="res://AssetBundle/Sprites/ForestBackground.png" id="1_64nw0"]
+[ext_resource type="Texture2D" uid="uid://c6b6u4nbjcvrq" path="res://addons/AssetBundle/Sprites/ForestBackground.png" id="1_64nw0"]
 
 [node name="Node2D" type="Node2D"]
 

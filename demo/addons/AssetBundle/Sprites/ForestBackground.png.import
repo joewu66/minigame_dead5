@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://c6b6u4nbjcvrq"
-path="res://.godot/imported/ForestBackground.png-893455a846faaf32512a98b46e671907.ctex"
+path="res://.godot/imported/ForestBackground.png-7f49934327c5f0c70a56b469c4c2dda5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://AssetBundle/Sprites/ForestBackground.png"
-dest_files=["res://.godot/imported/ForestBackground.png-893455a846faaf32512a98b46e671907.ctex"]
+source_file="res://addons/AssetBundle/Sprites/ForestBackground.png"
+dest_files=["res://.godot/imported/ForestBackground.png-7f49934327c5f0c70a56b469c4c2dda5.ctex"]
 
 [params]
 

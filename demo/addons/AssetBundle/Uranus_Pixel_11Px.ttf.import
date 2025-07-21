@@ -3,12 +3,12 @@
 importer="font_data_dynamic"
 type="FontFile"
 uid="uid://dl6hhgqlr2eyj"
-path="res://.godot/imported/Uranus_Pixel_11Px.ttf-04cffb6cda01ebe4cc00015964881682.fontdata"
+path="res://.godot/imported/Uranus_Pixel_11Px.ttf-83b1536f29f978c3a53d435069b70d91.fontdata"
 
 [deps]
 
-source_file="res://AssetBundle/Uranus_Pixel_11Px.ttf"
-dest_files=["res://.godot/imported/Uranus_Pixel_11Px.ttf-04cffb6cda01ebe4cc00015964881682.fontdata"]
+source_file="res://addons/AssetBundle/Uranus_Pixel_11Px.ttf"
+dest_files=["res://.godot/imported/Uranus_Pixel_11Px.ttf-83b1536f29f978c3a53d435069b70d91.fontdata"]
 
 [params]
 
