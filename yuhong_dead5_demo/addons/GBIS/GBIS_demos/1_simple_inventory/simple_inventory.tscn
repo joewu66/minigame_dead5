@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://ywlis4fmaskq"]
 
-[ext_resource type="Script" uid="uid://b3x4mwtjmm4tp" path="res://addons/addons/grid_base_inventory_system/core/view/container/inventory/inventory_view.gd" id="1_7cb40"]
-[ext_resource type="Script" uid="uid://c5rou3jm33pbt" path="res://addons/addons/grid_base_inventory_system/core/view/item/drop_area_view.gd" id="1_751o1"]
+[ext_resource type="Script" uid="uid://b3x4mwtjmm4tp" path="res://addons/GBIS/addons/grid_base_inventory_system/core/view/container/inventory/inventory_view.gd" id="1_7cb40"]
+[ext_resource type="Script" uid="uid://c5rou3jm33pbt" path="res://addons/GBIS/addons/grid_base_inventory_system/core/view/item/drop_area_view.gd" id="1_751o1"]
 [ext_resource type="Script" uid="uid://8jvttk2cbe1v" path="res://addons/GBIS/GBIS_demos/1_simple_inventory/simple_inventory.gd" id="1_d5jby"]
 
 [node name="SimpleInventory" type="Control"]
@@ -36,10 +36,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -159.5
-offset_top = -393.0
-offset_right = 160.5
-offset_bottom = -9.0
+offset_left = 178.5
+offset_top = 523.0
+offset_right = 498.5
+offset_bottom = 907.0
 grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("1_7cb40")
@@ -58,10 +58,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -296.0
-offset_top = -146.0
-offset_right = -176.0
-offset_bottom = -2.0
+offset_left = 42.0
+offset_top = 770.0
+offset_right = 162.0
+offset_bottom = 914.0
 grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("1_7cb40")
@@ -115,10 +115,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-offset_left = -256.0
-offset_top = -392.0
-offset_right = 256.0
-offset_bottom = -8.0
+offset_left = 272.0
+offset_top = 524.0
+offset_right = 784.0
+offset_bottom = 908.0
 grow_horizontal = 2
 grow_vertical = 0
 script = ExtResource("1_7cb40")

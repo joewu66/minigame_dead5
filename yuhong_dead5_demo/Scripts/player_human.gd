@@ -1,4 +1,5 @@
 extends CharacterBody2D
+@onready var inventory: Control = $Inventory
 
 
 const SPEED = 600
@@ -18,3 +19,11 @@ func _physics_process(delta: float) -> void:
 		velocity.y = move_toward(velocity.y, 0, SPEED)
 	
 	move_and_slide()
+	
+
+	if Input.is_action_just_pressed("open_inventory"):
+		toggle_inventory()
+
+#开关背包
+func toggle_inventory():
+	inventory.visible = not inventory.visible

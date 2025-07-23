@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="ConsumableData" load_steps=3 format=3 uid="uid://dpx3omowkx6ty"]
 
-[ext_resource type="Script" uid="uid://x8lw6iyk5rf5" path="res://addons/addons/grid_base_inventory_system/core/model/item/consumable_data.gd" id="1_pauxt"]
+[ext_resource type="Script" uid="uid://x8lw6iyk5rf5" path="res://addons/GBIS/addons/grid_base_inventory_system/core/model/item/consumable_data.gd" id="1_pauxt"]
 [ext_resource type="Texture2D" uid="uid://tlkilfmuuy0q" path="res://addons/GBIS/GBIS_demos/assets/test_item_icons/bottle.png" id="1_yk66e"]
 
 [resource]

@@ -20,9 +20,9 @@ func _on_button_toggle_storage_pressed() -> void:
 	storage.visible = not storage.visible
 
 func _on_button_add_test_items_pressed() -> void:
-	var item_1 = load("res://GBIS_demos/resources/equipment_1.tres")
-	var item_2 = load("res://GBIS_demos/resources/stackable_1.tres")
-	var item_3 = load("res://GBIS_demos/resources/consumable_1.tres")
+	var item_1 = load("res://addons/GBIS/GBIS_demos/resources/equipment_1.tres")
+	var item_2 = load("res://addons/GBIS/GBIS_demos/resources/stackable_1.tres")
+	var item_3 = load("res://addons/GBIS/GBIS_demos/resources/consumable_1.tres")
 	GBIS.add_item("demo1_inventory", item_1)
 	GBIS.add_item("demo1_inventory", item_2)
 	GBIS.add_item("demo1_inventory", item_3)
