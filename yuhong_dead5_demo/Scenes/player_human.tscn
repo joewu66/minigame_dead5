@@ -1,8 +1,9 @@
-[gd_scene load_steps=20 format=3 uid="uid://c0lh5brvfiqcq"]
+[gd_scene load_steps=21 format=3 uid="uid://c0lh5brvfiqcq"]
 
 [ext_resource type="Script" uid="uid://br8xmucjvb0cp" path="res://Scripts/player_human.gd" id="1_3hjw7"]
 [ext_resource type="Texture2D" uid="uid://cau5u6fh4pa7b" path="res://Assets/Sprites/Soldier/Soldier-Idle.png" id="1_7pex1"]
 [ext_resource type="Texture2D" uid="uid://b6tkhdy7y2hmx" path="res://Assets/Sprites/Soldier/Soldier-Walk.png" id="2_3hjw7"]
+[ext_resource type="PackedScene" uid="uid://cffu7kctwoibk" path="res://Scenes/inventory.tscn" id="4_4srdc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4srdc"]
 atlas = ExtResource("1_7pex1")
@@ -135,3 +136,9 @@ frame_progress = 0.910128
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -15)
 shape = SubResource("CircleShape2D_tkrwe")
+
+[node name="Inventory" parent="." instance=ExtResource("4_4srdc")]
+offset_left = 2.0
+offset_top = 0.75
+offset_right = 2.0
+offset_bottom = 0.75
