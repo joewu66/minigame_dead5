@@ -1,49 +1,31 @@
-[gd_scene load_steps=6 format=3 uid="uid://20k4mkjsrxvi"]
+[gd_scene load_steps=4 format=3 uid="uid://20k4mkjsrxvi"]
 
 [ext_resource type="Script" uid="uid://g4rpvb4sy6t" path="res://Scripts/item.gd" id="1_76mu4"]
-[ext_resource type="Texture2D" uid="uid://cc5frensepc00" path="res://Assets/Sprites/64x64.png" id="1_ys0gr"]
+[ext_resource type="PackedScene" uid="uid://cds7l1unuq7bo" path="res://Scenes/Items/test_item_1.tscn" id="2_76mu4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ys0gr"]
-size = Vector2(191, 206)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_76mu4"]
-atlas = ExtResource("1_ys0gr")
-region = Rect2(704, 0, 64, 68)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_u06aw"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_76mu4")
-}],
-"loop": true,
-"name": &"default",
-"speed": 5.0
-}]
+size = Vector2(64, 41.5642)
 
 [node name="Item" type="Area2D"]
-scale = Vector2(0.25, 0.25)
 collision_mask = 2
 script = ExtResource("1_76mu4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -107)
+position = Vector2(0, 9.53674e-07)
+scale = Vector2(1, 1.53979)
 shape = SubResource("RectangleShape2D_ys0gr")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(0, -107)
-scale = Vector2(4, 4)
-sprite_frames = SubResource("SpriteFrames_u06aw")
-
 [node name="Label" type="Label" parent="."]
-visible = false
 z_index = 10
-offset_left = 128.0
-offset_top = -360.0
-offset_right = 971.0
-offset_bottom = -223.0
-theme_override_font_sizes/font_size = 100
+offset_left = 44.0
+offset_top = -68.0
+offset_right = 261.0
+offset_bottom = -33.0
+theme_override_font_sizes/font_size = 25
 text = "Press E to pick up"
+
+[node name="sprite" parent="." instance=ExtResource("2_76mu4")]
+texture = null
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
 [connection signal="body_exited" from="." to="." method="_on_body_exited"]
