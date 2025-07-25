@@ -3,6 +3,8 @@ extends BaseContainerView
 ## 背包视图，控制背包的绘制
 class_name InventoryView
 
+var inventory_service: InventoryService
+
 ## 允许存放的物品类型，如果背包名字重复，可存放的物品类型需要一样
 @export var avilable_types: Array[String] = ["ANY"]
 
