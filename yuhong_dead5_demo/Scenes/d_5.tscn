@@ -1215,3 +1215,17 @@ autoplay = "new_animation"
 
 [node name="player_ghost" parent="." instance=ExtResource("9_c3ad3")]
 position = Vector2(1872, 1776)
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -300.0
+offset_bottom = 300.0
+grow_horizontal = 0
+stretch = true
+
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
+size = Vector2i(300, 300)
