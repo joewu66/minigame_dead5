@@ -1,9 +1,10 @@
-[gd_scene load_steps=21 format=3 uid="uid://c0lh5brvfiqcq"]
+[gd_scene load_steps=22 format=3 uid="uid://c0lh5brvfiqcq"]
 
 [ext_resource type="Script" uid="uid://br8xmucjvb0cp" path="res://Scripts/player_human.gd" id="1_3hjw7"]
 [ext_resource type="Texture2D" uid="uid://cau5u6fh4pa7b" path="res://Assets/Sprites/Soldier/Soldier-Idle.png" id="1_7pex1"]
 [ext_resource type="Texture2D" uid="uid://b6tkhdy7y2hmx" path="res://Assets/Sprites/Soldier/Soldier-Walk.png" id="2_3hjw7"]
 [ext_resource type="PackedScene" uid="uid://cffu7kctwoibk" path="res://Scenes/inventory.tscn" id="4_4srdc"]
+[ext_resource type="PackedScene" uid="uid://dlhxkk5cdff5t" path="res://Scenes/quick_bar.tscn" id="5_8dr4u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_4srdc"]
 atlas = ExtResource("1_7pex1")
@@ -141,3 +142,9 @@ offset_left = 2.0
 offset_top = 0.75
 offset_right = 2.0
 offset_bottom = 0.75
+
+[node name="Quick_bar" parent="." instance=ExtResource("5_8dr4u")]
+offset_left = -1388.75
+offset_top = -783.0
+offset_right = -1388.75
+offset_bottom = -783.0
