@@ -117,7 +117,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_tkrwe"]
-radius = 14.5602
+radius = 7.26722
 
 [node name="Player_Human" type="CharacterBody2D"]
 z_index = 5
@@ -127,14 +127,13 @@ script = ExtResource("1_3hjw7")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(-1, -15)
-scale = Vector2(2, 2)
 sprite_frames = SubResource("SpriteFrames_6appk")
 animation = &"run"
 autoplay = "Idle"
 frame_progress = 0.910128
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -15)
+position = Vector2(-1.5, -15.5)
 shape = SubResource("CircleShape2D_tkrwe")
 
 [node name="Inventory" parent="." instance=ExtResource("4_4srdc")]
