@@ -1,13 +1,20 @@
-[gd_scene load_steps=22 format=4 uid="uid://nea8u4uegl6h"]
+[gd_scene load_steps=30 format=4 uid="uid://nea8u4uegl6h"]
 
 [ext_resource type="PackedScene" uid="uid://c0lh5brvfiqcq" path="res://Scenes/player_human.tscn" id="1_rhepl"]
 [ext_resource type="Texture2D" uid="uid://vi7n1b3cals3" path="res://Assets/Sprites/Tileset/Tileset.png" id="2_6qyy3"]
 [ext_resource type="Texture2D" uid="uid://c7d3b2ogwqp5r" path="res://Assets/texture/light_texture.tres" id="2_u64lk"]
 [ext_resource type="Texture2D" uid="uid://cc5frensepc00" path="res://Assets/Sprites/64x64.png" id="3_el57h"]
+[ext_resource type="Texture2D" uid="uid://qsnopde66k8v" path="res://Assets/Sprites/SeparateAnim/Special2.png" id="3_jrfhn"]
 [ext_resource type="PackedScene" uid="uid://20k4mkjsrxvi" path="res://Scenes/item.tscn" id="4_t01qw"]
 [ext_resource type="Texture2D" uid="uid://dkxoo274kex1k" path="res://Assets/Tilesets/TilesetHouse.png" id="4_u64lk"]
 [ext_resource type="Texture2D" uid="uid://cjsn12k3bj7tl" path="res://Assets/Sprites/SeparateAnim/Idle.png" id="8_87bak"]
+[ext_resource type="Texture2D" uid="uid://bp8wwhih6oms3" path="res://Assets/Sprites/fc15.png" id="8_p6auv"]
+[ext_resource type="Script" uid="uid://nrbuvluyirsy" path="res://Scenes/minimap_viewport.gd" id="9_3x5tj"]
 [ext_resource type="PackedScene" uid="uid://bvkas1s7a3gle" path="res://Scenes/player_ghost.tscn" id="9_c3ad3"]
+[ext_resource type="Texture2D" uid="uid://c1exv4h6mbfr6" path="res://Assets/Tilesets/minimap_demo.png" id="10_3x5tj"]
+[ext_resource type="Texture2D" uid="uid://bikp4abrvdp67" path="res://Assets/Sprites/Soldier/Soldier.png" id="10_jrfhn"]
+[ext_resource type="Texture2D" uid="uid://bv61gu4e04fhq" path="res://Assets/Tilesets/minimap_frame_background.png" id="12_q7l4h"]
+[ext_resource type="Texture2D" uid="uid://c3d5xmbgtcya8" path="res://Assets/Tilesets/minimap_frame.png" id="13_okxkq"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hyjie"]
 texture = ExtResource("2_6qyy3")
@@ -1094,12 +1101,17 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_dc3t5"]
+texture = ExtResource("12_q7l4h")
+
 [node name="D5" type="Node2D"]
+visibility_layer = 3
 
 [node name="Gamemanager" type="Node" parent="."]
 
 [node name="Player_Human" parent="." instance=ExtResource("1_rhepl")]
-position = Vector2(944, 680)
+visibility_layer = 3
+position = Vector2(800, 504)
 
 [node name="Camera2D" type="Camera2D" parent="Player_Human"]
 position = Vector2(0.5, -14)
@@ -1111,6 +1123,13 @@ shadow_enabled = true
 shadow_filter = 1
 texture = ExtResource("2_u64lk")
 texture_scale = 0.6
+
+[node name="Sprite2D" type="Sprite2D" parent="Player_Human"]
+visibility_layer = 2
+z_index = -3
+position = Vector2(-1.25, -15.75)
+scale = Vector2(3, 3)
+texture = ExtResource("3_jrfhn")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 scale = Vector2(4, 4)
@@ -1178,45 +1197,123 @@ occluder = SubResource("OccluderPolygon2D_c3ad3")
 [node name="Items" type="Node" parent="."]
 
 [node name="Item" parent="Items" instance=ExtResource("4_t01qw")]
+visibility_layer = 3
 position = Vector2(1934, 2169)
 scale = Vector2(0.279197, 0.246323)
 
+[node name="Sprite2D" type="Sprite2D" parent="Items/Item"]
+visibility_layer = 3
+z_index = -3
+scale = Vector2(5, 5)
+texture = ExtResource("8_p6auv")
+
 [node name="Item4" parent="Items" instance=ExtResource("4_t01qw")]
-position = Vector2(1469, -942)
+visibility_layer = 3
+position = Vector2(4872, 1737)
 scale = Vector2(0.279197, 0.246323)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Items/Item4"]
+visibility_layer = 3
+z_index = -3
+position = Vector2(0, -52.7775)
+scale = Vector2(5, 5)
+texture = ExtResource("8_p6auv")
 
 [node name="Item5" parent="Items" instance=ExtResource("4_t01qw")]
-position = Vector2(1615, -944)
+visibility_layer = 3
+position = Vector2(5018, 1735)
 scale = Vector2(0.279197, 0.246323)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Items/Item5"]
+visibility_layer = 3
+z_index = -3
+position = Vector2(0.000274658, -97.4338)
+scale = Vector2(5, 5)
+texture = ExtResource("8_p6auv")
 
 [node name="Item6" parent="Items" instance=ExtResource("4_t01qw")]
-position = Vector2(1916, -951)
+visibility_layer = 3
+position = Vector2(5319, 1728)
 scale = Vector2(0.279197, 0.246323)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Items/Item6"]
+visibility_layer = 3
+z_index = -3
+position = Vector2(-10.7451, -85.2551)
+scale = Vector2(5, 5)
+texture = ExtResource("8_p6auv")
 
 [node name="Item7" parent="Items" instance=ExtResource("4_t01qw")]
-position = Vector2(1771, -947)
+visibility_layer = 3
+position = Vector2(5174, 1732)
 scale = Vector2(0.279197, 0.246323)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Items/Item7"]
+visibility_layer = 3
+z_index = -3
+position = Vector2(10.7451, -73.076)
+scale = Vector2(5, 5)
+texture = ExtResource("8_p6auv")
 
 [node name="Item8" parent="Items" instance=ExtResource("4_t01qw")]
-position = Vector2(2539, -130)
+visibility_layer = 3
+position = Vector2(3148, 1783)
 scale = Vector2(0.279197, 0.246323)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Items/Item8"]
+visibility_layer = 3
+z_index = -3
+position = Vector2(32.2354, -85.2542)
+scale = Vector2(5, 5)
+texture = ExtResource("8_p6auv")
 
 [node name="Item9" parent="Items" instance=ExtResource("4_t01qw")]
-position = Vector2(2489, -234)
+visibility_layer = 3
+position = Vector2(3098, 1679)
 scale = Vector2(0.279197, 0.246323)
+
+[node name="Sprite2D2" type="Sprite2D" parent="Items/Item9"]
+visibility_layer = 3
+z_index = -3
+position = Vector2(21.4902, -73.0751)
+scale = Vector2(5, 5)
+texture = ExtResource("8_p6auv")
 
 [node name="Item10" parent="Items" instance=ExtResource("4_t01qw")]
-position = Vector2(2374, -252)
+visibility_layer = 3
+position = Vector2(2983, 1661)
 scale = Vector2(0.279197, 0.246323)
 
+[node name="Sprite2D2" type="Sprite2D" parent="Items/Item10"]
+visibility_layer = 3
+z_index = -3
+position = Vector2(-10.7451, -60.8959)
+scale = Vector2(5, 5)
+texture = ExtResource("8_p6auv")
+
 [node name="Item2" parent="Items" instance=ExtResource("4_t01qw")]
+visibility_layer = 3
 position = Vector2(2078, 2020)
 
+[node name="Sprite2D2" type="Sprite2D" parent="Items/Item2"]
+visibility_layer = 3
+z_index = -3
+position = Vector2(-44, -79.9994)
+scale = Vector2(5, 5)
+texture = ExtResource("8_p6auv")
+
 [node name="Item3" parent="Items" instance=ExtResource("4_t01qw")]
+visibility_layer = 3
 position = Vector2(951, 306)
 
+[node name="Sprite2D2" type="Sprite2D" parent="Items/Item3"]
+visibility_layer = 3
+z_index = -3
+position = Vector2(-28, -84)
+scale = Vector2(5, 5)
+texture = ExtResource("8_p6auv")
+
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
-color = Color(0.903598, 0.903598, 0.903598, 1)
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(248, 752)
@@ -1226,18 +1323,53 @@ animation = &"new_animation"
 autoplay = "new_animation"
 
 [node name="player_ghost" parent="." instance=ExtResource("9_c3ad3")]
+visibility_layer = 3
 position = Vector2(1872, 1776)
+
+[node name="Sprite2D" type="Sprite2D" parent="player_ghost"]
+visibility_layer = 3
+z_index = -3
+scale = Vector2(10, 10)
+texture = ExtResource("10_jrfhn")
+region_enabled = true
+region_rect = Rect2(140, 539, 16, 18)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
-[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer"]
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
+clip_children = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -300.0
-offset_bottom = 300.0
+offset_left = -499.0
+offset_right = 1.0
+offset_bottom = 500.0
 grow_horizontal = 0
+theme_override_styles/panel = SubResource("StyleBoxTexture_dc3t5")
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
 stretch = true
 
-[node name="SubViewport" type="SubViewport" parent="CanvasLayer/SubViewportContainer"]
-size = Vector2i(300, 300)
+[node name="SubViewport" type="SubViewport" parent="CanvasLayer/PanelContainer/SubViewportContainer" node_paths=PackedStringArray("camera_node", "player_node")]
+handle_input_locally = false
+canvas_cull_mask = 4294967294
+size = Vector2i(500, 500)
+render_target_update_mode = 4
+script = ExtResource("9_3x5tj")
+camera_node = NodePath("Camera2D")
+player_node = NodePath("../../../../Player_Human")
+
+[node name="Camera2D" type="Camera2D" parent="CanvasLayer/PanelContainer/SubViewportContainer/SubViewport"]
+zoom = Vector2(0.2, 0.2)
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/PanelContainer"]
+layout_mode = 2
+texture = ExtResource("13_okxkq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visibility_layer = 2
+z_index = -5
+position = Vector2(555, 1150)
+scale = Vector2(4.635, 4.635)
+texture = ExtResource("10_3x5tj")
