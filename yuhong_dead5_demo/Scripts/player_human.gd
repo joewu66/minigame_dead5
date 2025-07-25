@@ -34,15 +34,15 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_just_pressed("open_inventory"):
 		toggle_inventory()
 	
-	##监听切换道具
-	#for i in range(1, 7):
-		#if Input.is_action_just_pressed("select_quick_bar_" + str(i)):
-			#var grid_id = switch_quick_bar_items(i)
-			#print(grid_id)
-			#
-	##监听使用道具
-	#if Input.is_action_just_pressed("inv_use") and grid_id:
-		#use_selected_item(grid_id)
+	#监听切换道具
+	for i in range(1, 7):
+		if Input.is_action_just_pressed("select_quick_bar_" + str(i)):
+			grid_id = switch_quick_bar_items(i)
+			
+	#监听使用道具
+	if Input.is_action_just_pressed("inv_use") and grid_id:
+		print("used")
+		use_selected_item(grid_id)
 
 #开关背包
 func toggle_inventory():
@@ -50,13 +50,12 @@ func toggle_inventory():
 	
 #切换快捷栏道具
 func switch_quick_bar_items(x):
-	var grid_id = Vector2(x, 1)
+	grid_id = Vector2(x, 1)
 	return grid_id
 
 #使用道具的方法
 func use_selected_item(grid_id):
 	GBIS.inventory_service.use_item(gamemanager.player_1_inv_name, grid_id)
-			
 
 #丢弃道具的方法
 func throw_item(item_data: ItemData) -> void:

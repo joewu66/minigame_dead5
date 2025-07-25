@@ -13,11 +13,11 @@ func use() -> bool:
 			if current_amount <= 0:
 				return destroy_if_empty
 	return false
-	print("used")
 
 ## 消耗方法，需重写，返回消耗数量（>=0）
 func consume() -> int:
 	push_warning("[Override this function] consumable item [%s] has been consumed" % item_name)
+	print("item_used")
 	return 1
 	
 func drop() -> void:
