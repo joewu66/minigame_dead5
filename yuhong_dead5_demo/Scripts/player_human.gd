@@ -9,6 +9,10 @@ const SPEED = 600
 var quick_bar_item_selected: ConsumableData
 var grid_id: Vector2
 
+func _enter_tree() -> void:
+	#色湖之该节点的多人权限
+	set_multiplayer_authority(name.to_int())
+
 func _ready() -> void:
 	gamemanager.player = self
 	init_player_human()
@@ -16,6 +20,7 @@ func _ready() -> void:
 #初始化玩家
 func init_player_human():
 	inventory.visible = false
+	position = Vector2(randf_range(100,200),randf_range(100,200))
 
 func _physics_process(delta: float) -> void:
 	

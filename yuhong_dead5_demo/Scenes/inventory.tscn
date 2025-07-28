@@ -8,6 +8,7 @@ layout_mode = 3
 anchors_preset = 0
 
 [node name="ColorRect" type="ColorRect" parent="."]
+z_index = 5
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -24,6 +25,7 @@ scale = Vector2(1.14512, 90.1435)
 color = Color(1, 1, 1, 0.168627)
 
 [node name="InventoryView" type="Control" parent="."]
+z_index = 5
 anchors_preset = 0
 offset_left = -66.0
 offset_top = -24.0
