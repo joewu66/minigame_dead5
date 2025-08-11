@@ -14,7 +14,7 @@ offset_bottom = -523.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="Quick_bar" type="Control" parent="."]
+[node name="InventoryView" type="Control" parent="."]
 z_index = 5
 anchors_preset = 0
 offset_left = 1504.0

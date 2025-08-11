@@ -4,7 +4,7 @@ extends Node
 @onready var items_container: Node = $"."
 
 var new_item: Item 
-var new_item_data: Array[ItemData] = [null,null,null,null,null,null]
+var new_item_data: Array[ItemData]
 
 
 static var random_list: Array[ItemData] = [
@@ -24,7 +24,7 @@ func item_randomly_generated():
 		items_container.add_child(new_item)
 		
 		#决定生成的道具种类和sprite
-		new_item_data[i] = random_list.pick_random()
+		new_item_data.append(random_list.pick_random())
 		var sprite = new_item_data[i].drop_model.instantiate()
 		new_item.sprite.add_child(sprite)
 		
@@ -32,4 +32,5 @@ func item_randomly_generated():
 		var random_position = Vector2(randf_range(0,1000),randf_range(0,1000))
 		new_item.position = random_position
 		
+		#随机生成的new_item_data的itemdata数据传给new_item
 		new_item.data = new_item_data[i]

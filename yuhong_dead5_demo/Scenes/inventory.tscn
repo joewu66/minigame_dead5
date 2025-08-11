@@ -7,6 +7,14 @@
 layout_mode = 3
 anchors_preset = 0
 
+[node name="DropAreaView" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 2560.0
+offset_bottom = 1334.0
+script = ExtResource("1_k5gp2")
+metadata/_custom_type_script = "uid://c5rou3jm33pbt"
+
 [node name="ColorRect" type="ColorRect" parent="."]
 z_index = 5
 layout_mode = 1
@@ -38,11 +46,3 @@ container_rows = 1
 base_size = 16
 stack_num_font_size = 6
 metadata/_custom_type_script = "uid://b3x4mwtjmm4tp"
-
-[node name="DropAreaView" type="Control" parent="."]
-visible = false
-anchors_preset = 0
-offset_right = 3840.0
-offset_bottom = 2054.0
-script = ExtResource("1_k5gp2")
-metadata/_custom_type_script = "uid://c5rou3jm33pbt"

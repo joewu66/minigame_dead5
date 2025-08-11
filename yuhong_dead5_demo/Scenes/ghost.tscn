@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3 uid="uid://ded2lspgx8o0g"]
+
+[ext_resource type="Texture2D" uid="uid://bkjbd707f7bqa" path="res://Assets/Sprites/stage_three.png" id="1_3mxmt"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_e3r4w"]
+atlas = ExtResource("1_3mxmt")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_108wt"]
+atlas = ExtResource("1_3mxmt")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3btnm"]
+atlas = ExtResource("1_3mxmt")
+region = Rect2(64, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_taxxh"]
+atlas = ExtResource("1_3mxmt")
+region = Rect2(96, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_thbej"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_e3r4w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_108wt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3btnm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_taxxh")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D"]
+z_index = 6
+scale = Vector2(2, 2)
+sprite_frames = SubResource("SpriteFrames_thbej")
+autoplay = "default"
+frame_progress = 0.490053
