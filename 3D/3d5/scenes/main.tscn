@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://cg28kdsmeq3hj"]
+[gd_scene load_steps=19 format=3 uid="uid://cg28kdsmeq3hj"]
 
 [ext_resource type="PackedScene" uid="uid://dpjhfyna3lhxj" path="res://scenes/human.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://cahehvyp0ujrl" path="res://scripts/Untitled.glb" id="1_tipki"]
@@ -23,6 +23,8 @@ background_mode = 2
 sky = SubResource("Sky_tefeu")
 tonemap_mode = 2
 glow_enabled = true
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_choun"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
 albedo_color = Color(0.8, 0.8, 0.8, 1)
@@ -51,6 +53,7 @@ shadow_enabled = true
 transform = Transform3D(6.916, 0, 0, 0, 3.09837, 0, 0, 0, 6.916, 0, 0, 0)
 
 [node name="Ground" type="CSGBox3D" parent="Environment"]
+material_override = SubResource("StandardMaterial3D_choun")
 use_collision = true
 size = Vector3(50, 1, 50)
 material = SubResource("StandardMaterial3D_1")
@@ -64,7 +67,7 @@ transform = Transform3D(161.2, 0, 0, 0, 96.72, 0, 0, 0, 161.2, -24.6, 6, 25.5)
 transform = Transform3D(161.226, 0, 0, 0, 113.503, 0, 0, 0, 161.226, -24, 0, 25)
 
 [node name="Obstacles" type="Node3D" parent="Environment"]
-transform = Transform3D(1.1, 0, 0, 0, 0.7, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(1.1, 0, 0, 0, 0.91, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="CSGBox3D" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 17.3636, 1.5, -11.5)
@@ -352,7 +355,7 @@ use_collision = true
 size = Vector3(2, 2, 1)
 
 [node name="CSGBox3D60" type="CSGBox3D" parent="Environment/Obstacles"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.58489, 1.75171, 2.54224)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.58489, 1.39704, 2.54224)
 use_collision = true
 size = Vector3(2, 2, 1)
 
@@ -382,7 +385,7 @@ use_collision = true
 size = Vector3(2, 2, 2)
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="Environment/Obstacles"]
-transform = Transform3D(3.1, 0, 0, 0, 7.936, 0, 0, 0, 3.1, 0, 7.83823, -2.89185)
+transform = Transform3D(3.1, 0, 0, 0, 5.5552, 0, 0, 0, 3.1, 0, 6.06488, -2.89185)
 use_collision = true
 
 [node name="楼梯" parent="Environment" instance=ExtResource("3_85g3d")]
