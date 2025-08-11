@@ -1,15 +1,15 @@
 [remap]
 
-importer="scene"
+importer="animation_library"
 importer_version=1
-type="PackedScene"
-uid="uid://bco630lbv4r4d"
-path="res://.godot/imported/skeleton_mage.glb-b19ab269d3418753c076d76d1da4fd0f.scn"
+type="AnimationLibrary"
+uid="uid://bjx8ivov4lhla"
+path="res://.godot/imported/zombie_idle.glb-ced3e7efec9ac5867a13b58eb22c1d0d.res"
 
 [deps]
 
-source_file="res://models/skeleton_mage.glb"
-dest_files=["res://.godot/imported/skeleton_mage.glb-b19ab269d3418753c076d76d1da4fd0f.scn"]
+source_file="res://models/zombie_idle.glb"
+dest_files=["res://.godot/imported/zombie_idle.glb-ced3e7efec9ac5867a13b58eb22c1d0d.res"]
 
 [params]
 
@@ -34,7 +34,7 @@ animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={
 "animations": {
-"Idle_B": {
+"Idle": {
 "save_to_file/enabled": false,
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "",
@@ -1833,7 +1833,7 @@ _subresources={
 "slice_99/start_frame": 0,
 "slices/amount": 0
 },
-"Idle_Combat": {
+"T-pose": {
 "save_to_file/enabled": false,
 "save_to_file/keep_custom_tracks": "",
 "save_to_file/path": "",

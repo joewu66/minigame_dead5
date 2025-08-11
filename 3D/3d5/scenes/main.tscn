@@ -1,6 +1,4 @@
-
-[gd_scene load_steps=16 format=3 uid="uid://cg28kdsmeq3hj"]
-
+[gd_scene load_steps=21 format=3 uid="uid://cg28kdsmeq3hj"]
 
 [ext_resource type="PackedScene" uid="uid://dpjhfyna3lhxj" path="res://scenes/human.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://cahehvyp0ujrl" path="res://scripts/Untitled.glb" id="1_tipki"]
