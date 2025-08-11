@@ -6,6 +6,7 @@ extends Control
 @onready var game_over_panel = $GameOverPanel
 @onready var restart_button = $GameOverPanel/VBoxContainer/RestartButton
 @onready var controls_label = $VBoxContainer/ControlsLabel
+@onready var inventory_ui = $InventoryUI
 
 func _ready():
 	print("UI控制脚本加载中...")
@@ -44,11 +45,9 @@ func _ready():
 	
 	game_over_panel.hide()
 
-func update_timer(time: float):
+func update_timer(_time: float):
 	if timer_label:
-		var minutes = int(time) / 60
-		var seconds = int(time) % 60
-		timer_label.text = "时间: %02d:%02d" % [minutes, seconds]
+		timer_label.text = "无限时间"
 
 func update_item_count(count: int):
 	if item_label:

@@ -3,12 +3,12 @@ extends Node
 @onready var human = $"../Players/Human"
 @onready var ghost = $"../Players/Ghost"
 @onready var ui = $"../UI/GameUI"
-@onready var ghost_camera = get_node("/root/Main/GhostViewport/GhostCamera")
+@onready var ghost_viewport_camera = get_node("/root/Main/GhostViewport/GhostCamera")
 @onready var ghost_node = get_node("../Players/Ghost")
 @onready var ghost_viewport = get_node("/root/Main/GhostViewport")
 @onready var ghost_viewport_container = get_node("/root/Main/UI/GhostViewportContainer")
 
-var game_time = 180.0  # 3分钟
+var game_time = 999999.0  # 无限时间
 var game_active = true
 
 signal game_over
@@ -21,10 +21,14 @@ func _ready():
 	print("人类节点: ", human)
 	print("鬼魂节点: ", ghost)
 	print("UI节点: ", ui)
-	print("鬼魂摄像头: ", ghost_camera)
+	print("鬼魂摄像头: ", ghost_viewport_camera)
 	print("鬼魂节点: ", ghost_node)
 	print("鬼魂视口: ", ghost_viewport)
 	print("鬼魂视口容器: ", ghost_viewport_container)
+	
+	# 连接背包更新信号
+	if human:
+		human.inventory_updated.connect(_on_inventory_updated)
 	
 	# 设置鬼魂视口容器
 	if ghost_viewport and ghost_viewport_container:
@@ -81,10 +85,10 @@ func _ready():
 			else:
 				print("警告：鬼魂没有自带摄像头，使用备用方案")
 				# 如果鬼魂没有自己的摄像头，使用原来的方法
-				if ghost_camera and ghost_camera.get_parent():
-					var old_parent = ghost_camera.get_parent()
-					old_parent.remove_child(ghost_camera)
-					viewport_child.add_child(ghost_camera)
+				if ghost_viewport_camera and ghost_viewport_camera.get_parent():
+					var old_parent = ghost_viewport_camera.get_parent()
+					old_parent.remove_child(ghost_viewport_camera)
+					viewport_child.add_child(ghost_viewport_camera)
 					print("备用鬼魂摄像头已移动到子视口")
 				else:
 					print("警告：无法移动备用鬼魂摄像头")
@@ -192,16 +196,13 @@ func _initialize_players():
 		if human and human.get_node("CameraPivot/Camera3D"):
 			human.get_node("CameraPivot/Camera3D").current = false
 
-func _process(delta):
+func _process(_delta):
 	if not game_active:
 		return
-		
-	game_time -= delta
+	
+	# 不再减少游戏时间
 	if ui:
 		ui.update_timer(game_time)
-	
-	if game_time <= 0:
-		end_game("人类获胜！时间到了！")
 	
 	# 更新视口摄像头位置
 	if NetworkManager.is_ghost_player() and ghost_node:
@@ -236,11 +237,17 @@ func end_game(message: String):
 	game_over.emit()
 
 func _on_human_caught():
-	end_game("鬼魂获胜！人类被抓住了！")
+	end_game("鬼魂获胜！")
 
 func _on_item_used():
 	if ui:
 		ui.update_item_count(human.slow_trap_count)
+
+func _on_inventory_updated():
+	if ui and ui.inventory_ui and NetworkManager.is_human_player():
+		ui.inventory_ui.update_ui(human.inventory)
+		# 高亮显示当前选中的槽位
+		ui.inventory_ui.highlight_slot(human.selected_slot)
 
 func restart_game():
 	get_tree().reload_current_scene()
