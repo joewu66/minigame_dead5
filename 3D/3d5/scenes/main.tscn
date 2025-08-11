@@ -1,4 +1,6 @@
-[gd_scene load_steps=23 format=3 uid="uid://cg28kdsmeq3hj"]
+
+[gd_scene load_steps=24 format=3 uid="uid://cg28kdsmeq3hj"]
+
 
 [ext_resource type="PackedScene" uid="uid://dpjhfyna3lhxj" path="res://scenes/human.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://cahehvyp0ujrl" path="res://scripts/Untitled.glb" id="1_tipki"]
@@ -13,7 +15,12 @@
 [ext_resource type="PackedScene" uid="uid://dpgno5e60fsaq" path="res://scenes/pickup_trap_fixed.tscn" id="7_o6xl0"]
 [ext_resource type="PackedScene" uid="uid://p0oas6e3xq18" path="res://scenes/wall.tscn" id="12_trceg"]
 [ext_resource type="PackedScene" uid="uid://c2402nxf8rkix" path="res://scenes/wall_corner.tscn" id="13_a8y0u"]
+
 [ext_resource type="PackedScene" uid="uid://ufsq0clykqpu" path="res://scenes/torch.tscn" id="14_a8y0u"]
+
+[ext_resource type="PackedScene" uid="uid://70kka07bjjjj" path="res://scenes/floor_stone.tscn" id="14_jkv2x"]
+[ext_resource type="PackedScene" uid="uid://bxnxo2ox8lrhu" path="res://scenes/floor_wood.tscn" id="15_jbj1t"]
+
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tbgi4"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -807,6 +814,7 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -77.88
 [node name="StaticBody3D25" parent="3D_art_models/walls_2ndfloor" instance=ExtResource("12_trceg")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -77.8931, 1.52337, -42.3491)
 
+
 [node name="StaticBody3D26" parent="3D_art_models/walls_2ndfloor" instance=ExtResource("12_trceg")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -77.8931, 1.52337, -26.3408)
 
@@ -884,3 +892,327 @@ transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -56.4836, 8.68259, 41.984)
 
 [node name="torch13" parent="." instance=ExtResource("14_a8y0u")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 74.3583, 21.9642, -10.1578)
+
+[node name="floor_stone" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.45572, 1.94919, -74.3865)
+
+[node name="floor_stone2" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.45572, 1.94919, -58.9089)
+
+[node name="floor_stone3" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.45572, 1.94919, -43.4333)
+
+[node name="floor_stone4" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.45572, 1.94919, -27.6048)
+
+[node name="floor_stone5" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.45572, 1.94919, -12.4192)
+
+[node name="floor_stone6" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.45572, 1.94919, 3.38014)
+
+[node name="floor_stone7" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.45572, 1.94919, 19.0357)
+
+[node name="floor_stone8" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.45572, 1.94919, 35.0081)
+
+[node name="floor_stone9" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.45572, 1.94919, 51.0081)
+
+[node name="floor_stone10" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.45572, 1.94919, 67.0052)
+
+[node name="floor_stone11" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -4.45572, 1.94919, 83.0052)
+
+[node name="floor_stone12" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 11.5167, 1.94919, 73.0052)
+
+[node name="floor_stone13" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 11.5167, 1.94919, 57.0052)
+
+[node name="floor_stone14" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 11.5167, 1.94919, 41.0052)
+
+[node name="floor_stone15" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 11.5167, 1.94919, 25.0052)
+
+[node name="floor_stone16" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 11.5167, 1.94919, 9.00519)
+
+[node name="floor_stone17" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 11.5167, 1.94919, -6.99481)
+
+[node name="floor_stone18" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 11.5167, 1.94919, -22.9948)
+
+[node name="floor_stone19" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 11.5167, 1.94919, -38.9948)
+
+[node name="floor_stone20" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 11.5167, 1.94919, -54.9948)
+
+[node name="floor_stone21" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 11.5167, 1.94919, -70.9948)
+
+[node name="floor_stone22" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 11.5167, 1.94919, -86.9948)
+
+[node name="floor_stone23" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 27.5167, 1.94919, -86.9948)
+
+[node name="floor_stone24" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 27.5167, 1.94919, -70.9948)
+
+[node name="floor_stone25" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 27.5167, 1.94919, -54.9948)
+
+[node name="floor_stone26" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 27.5167, 1.94919, -38.9948)
+
+[node name="floor_stone27" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 27.5167, 1.94919, -22.9948)
+
+[node name="floor_stone28" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 27.5167, 1.94919, -6.99481)
+
+[node name="floor_stone29" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 27.5167, 1.94919, 9.00519)
+
+[node name="floor_stone30" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 27.5167, 1.94919, 25.0052)
+
+[node name="floor_stone31" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 27.5167, 1.94919, 41.0052)
+
+[node name="floor_stone32" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 27.5167, 1.94919, 57.0052)
+
+[node name="floor_stone33" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 27.5167, 1.94919, 73.0052)
+
+[node name="floor_stone34" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, 73.0052)
+
+[node name="floor_stone35" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, 57.0052)
+
+[node name="floor_stone36" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, 41.1468)
+
+[node name="floor_stone37" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, 24.9231)
+
+[node name="floor_stone38" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, 8.92308)
+
+[node name="floor_stone39" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, -7.07692)
+
+[node name="floor_stone40" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, -23.0769)
+
+[node name="floor_stone41" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, -39.0769)
+
+[node name="floor_stone42" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, -55.0769)
+
+[node name="floor_stone43" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, -71.0411)
+
+[node name="floor_stone44" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, -87.0411)
+
+[node name="floor_stone45" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, -87.0411)
+
+[node name="floor_stone46" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 75.5167, 1.94919, -87.0411)
+
+[node name="floor_stone47" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 75.5167, 1.94919, -71.0411)
+
+[node name="floor_stone48" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 75.5167, 1.94919, -55.0411)
+
+[node name="floor_stone49" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 75.5167, 1.94919, -40.0411)
+
+[node name="floor_stone50" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 75.5167, 1.94919, -24.0411)
+
+[node name="floor_stone51" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 75.5167, 1.94919, -9.04113)
+
+[node name="floor_stone52" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 75.5167, 1.94919, 6.95887)
+
+[node name="floor_stone53" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 75.5167, 1.94919, 22.9589)
+
+[node name="floor_stone54" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 75.5167, 1.94919, 38.9589)
+
+[node name="floor_stone55" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 75.5167, 1.94919, 54.9589)
+
+[node name="floor_stone56" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 75.5167, 1.94919, 70.9589)
+
+[node name="floor_stone57" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, 70.9589)
+
+[node name="floor_stone58" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, 54.9589)
+
+[node name="floor_stone59" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, 40.9589)
+
+[node name="floor_stone60" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, 24.9589)
+
+[node name="floor_stone61" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, 8.95887)
+
+[node name="floor_stone62" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, -7.04113)
+
+[node name="floor_stone63" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, -23.0411)
+
+[node name="floor_stone64" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, -38.0411)
+
+[node name="floor_stone65" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, -54.0411)
+
+[node name="floor_stone66" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, -71.0411)
+
+[node name="floor_stone67" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 59.5167, 1.94919, -64.0411)
+
+[node name="floor_stone68" parent="." instance=ExtResource("14_jkv2x")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 43.5167, 1.94919, 32.9589)
+
+[node name="floor_wood" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -67.3595, 1.94919, -58.4526)
+
+[node name="floor_wood2" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -67.3595, 1.94919, -42.3691)
+
+[node name="floor_wood3" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -67.3595, 1.94919, -26.988)
+
+[node name="floor_wood4" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -67.3595, 1.94919, -74.4086)
+
+[node name="floor_wood5" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -67.3595, 1.94919, -10.9614)
+
+[node name="floor_wood6" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -67.3595, 1.94919, 4.87291)
+
+[node name="floor_wood7" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -67.3595, 1.94919, 20.8218)
+
+[node name="floor_wood8" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -67.3595, 1.94919, 36.1427)
+
+[node name="floor_wood9" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -67.3595, 1.94919, 52.2222)
+
+[node name="floor_wood10" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -67.3595, 1.94919, 68.4436)
+
+[node name="floor_wood11" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -52.0512, 1.94919, 68.4436)
+
+[node name="floor_wood12" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -52.0512, 1.94919, 52.3835)
+
+[node name="floor_wood13" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -52.0512, 1.94919, 36.0781)
+
+[node name="floor_wood14" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -52.0512, 1.94919, 20.6976)
+
+[node name="floor_wood15" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -52.0512, 1.94919, 4.79546)
+
+[node name="floor_wood16" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -52.0512, 1.94919, -11.1006)
+
+[node name="floor_wood17" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -52.0512, 1.94919, -27.0254)
+
+[node name="floor_wood18" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -52.0512, 1.94919, -42.5344)
+
+[node name="floor_wood19" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -52.0512, 1.94919, -58.3384)
+
+[node name="floor_wood20" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -52.0512, 1.94919, -74.4643)
+
+[node name="floor_wood21" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.1913, 1.94919, -74.4643)
+
+[node name="floor_wood22" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.1913, 1.94919, -58.5497)
+
+[node name="floor_wood23" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.1913, 1.94919, -42.5858)
+
+[node name="floor_wood24" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.1913, 1.94919, -26.6073)
+
+[node name="floor_wood25" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.1913, 1.94919, -10.5347)
+
+[node name="floor_wood26" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.1913, 1.94919, 5.39948)
+
+[node name="floor_wood27" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.1913, 1.94919, 21.0965)
+
+[node name="floor_wood28" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.1913, 1.94919, 36.7317)
+
+[node name="floor_wood29" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.1913, 1.94919, 52.3454)
+
+[node name="floor_wood30" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -36.1913, 1.94919, 68.235)
+
+[node name="floor_wood31" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, 68.235)
+
+[node name="floor_wood32" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, 52.235)
+
+[node name="floor_wood33" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, 36.4141)
+
+[node name="floor_wood34" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, 20.4141)
+
+[node name="floor_wood35" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, 5.41407)
+
+[node name="floor_wood36" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, -10.5859)
+
+[node name="floor_wood37" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, -26.5859)
+
+[node name="floor_wood38" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, -42.5859)
+
+[node name="floor_wood39" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, -58.5859)
+
+[node name="floor_wood40" parent="." instance=ExtResource("15_jbj1t")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, -74.5859)
