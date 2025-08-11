@@ -1,15 +1,10 @@
 [gd_scene load_steps=6 format=3 uid="uid://d1uy4yt8csedb"]
 
 [ext_resource type="Script" uid="uid://ccfipab1c6asr" path="res://scripts/ghost.gd" id="1_script"]
+[ext_resource type="PackedScene" uid="uid://b0jb30l0qq56g" path="res://models/brackeys_3d_game_assets/zombie/zombie.glb" id="2_bbnym"]
+[ext_resource type="AnimationLibrary" uid="uid://bjx8ivov4lhla" path="res://models/zombie_idle.glb" id="3_veat2"]
 
-[sub_resource type="SphereMesh" id="SphereMesh_1"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1"]
-transparency = 1
-albedo_color = Color(0.5, 0.5, 0.8, 0.8)
-
-[sub_resource type="SphereShape3D" id="SphereShape3D_1"]
-radius = 3.0
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5mfnq"]
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_2"]
 radius = 2.0
@@ -17,13 +12,9 @@ radius = 2.0
 [node name="Ghost" type="CharacterBody3D"]
 script = ExtResource("1_script")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(6.006, 0, 0, 0, 6.006, 0, 0, 0, 6.006, 0, 0, 0)
-mesh = SubResource("SphereMesh_1")
-surface_material_override/0 = SubResource("StandardMaterial3D_1")
-
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-shape = SubResource("SphereShape3D_1")
+transform = Transform3D(2.43756, 0, 0, 0, 2.43756, 0, 0, 0, 2.43756, 0, 0, 0)
+shape = SubResource("CapsuleShape3D_5mfnq")
 
 [node name="AttackArea" type="Area3D" parent="."]
 
@@ -38,3 +29,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 3)
 current = true
+
+[node name="zombie" parent="." instance=ExtResource("2_bbnym")]
+transform = Transform3D(-0.795975, 0, 0.55299, 0, 0.969213, 0, -0.55299, 0, -0.795975, 0, -2.05641, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="zombie"]
+libraries = {
+&"zombie_idle": ExtResource("3_veat2")
+}
+autoplay = "zombie_idle/Idle"
