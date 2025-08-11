@@ -5,7 +5,7 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_2ktk7"]
 size = Vector3(3.99805, 4.00439, 1)
 
-[node name="StaticBody3D" type="StaticBody3D"]
+[node name="wall" type="StaticBody3D"]
 
 [node name="wall2" parent="." instance=ExtResource("1_wykyb")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
