@@ -1,5 +1,7 @@
 
+
 [gd_scene load_steps=24 format=3 uid="uid://cg28kdsmeq3hj"]
+
 
 
 [ext_resource type="PackedScene" uid="uid://dpjhfyna3lhxj" path="res://scenes/human.tscn" id="1_o5qli"]
@@ -7,12 +9,19 @@
 [ext_resource type="PackedScene" uid="uid://csdllejrse6ag" path="res://scripts/Untitled.blend2.glb" id="2_85g3d"]
 [ext_resource type="PackedScene" uid="uid://d1uy4yt8csedb" path="res://scenes/ghost.tscn" id="2_sugp2"]
 [ext_resource type="PackedScene" uid="uid://kf8uvi76ssxk" path="res://楼梯.glb" id="3_85g3d"]
+[ext_resource type="PackedScene" uid="uid://djk13atui72ax" path="res://scenes/bricks.tscn" id="3_jkv2x"]
 [ext_resource type="Script" uid="uid://bcml57ot5kxcf" path="res://scripts/gamemanager.gd" id="3_jyhfs"]
 [ext_resource type="PackedScene" uid="uid://dr2if8kx72avo" path="res://楼梯2.tscn" id="4_choun"]
+[ext_resource type="PackedScene" uid="uid://b3hy3m13jljmc" path="res://scenes/box.tscn" id="4_jbj1t"]
 [ext_resource type="Script" uid="uid://dl7dy3mnufq2y" path="res://scripts/control.gd" id="4_jyhfs"]
 [ext_resource type="Script" uid="uid://c16i4ggqvk5k1" path="res://scripts/startup.gd" id="5_startup"]
 [ext_resource type="Script" uid="uid://ck0ln1o6b8jxx" path="res://scripts/camera_test.gd" id="6_camera_test"]
 [ext_resource type="PackedScene" uid="uid://dpgno5e60fsaq" path="res://scenes/pickup_trap_fixed.tscn" id="7_o6xl0"]
+
+[ext_resource type="PackedScene" uid="uid://cpy24koad22k3" path="res://scenes/keg_decorated.tscn" id="12_eb6dy"]
+[ext_resource type="PackedScene" uid="uid://ctrq0s86l322i" path="res://scenes/tower.tscn" id="14_jbj1t"]
+[ext_resource type="PackedScene" uid="uid://thggvqmkmykw" path="res://scenes/static_body_3d.tscn" id="14_muem4"]
+
 [ext_resource type="PackedScene" uid="uid://p0oas6e3xq18" path="res://scenes/wall.tscn" id="12_trceg"]
 [ext_resource type="PackedScene" uid="uid://c2402nxf8rkix" path="res://scenes/wall_corner.tscn" id="13_a8y0u"]
 
@@ -20,6 +29,7 @@
 
 [ext_resource type="PackedScene" uid="uid://70kka07bjjjj" path="res://scenes/floor_stone.tscn" id="14_jkv2x"]
 [ext_resource type="PackedScene" uid="uid://bxnxo2ox8lrhu" path="res://scenes/floor_wood.tscn" id="15_jbj1t"]
+
 
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_tbgi4"]
@@ -318,91 +328,102 @@ size = Vector3(3, 2, 2)
 
 [node name="CSGBox3D49" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.45311, 1.50605, 1.25506)
+visible = false
 use_collision = true
 size = Vector3(2, 2, 1)
 
 [node name="CSGBox3D50" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.40153, 1.50605, 3.27936)
+visible = false
 use_collision = true
 size = Vector3(2, 2, 1)
 
 [node name="CSGBox3D51" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.90153, 1.50605, 2.27936)
+visible = false
 use_collision = true
 size = Vector3(1, 2, 3)
 
-[node name="CSGBox3D52" type="CSGBox3D" parent="Environment/Obstacles"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.32167, 1.50605, 6.60498)
-use_collision = true
-size = Vector3(2, 2, 1)
-
 [node name="CSGBox3D53" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.82167, 1.50605, 6.10498)
-use_collision = true
+visible = false
 size = Vector3(1, 2, 2)
 
 [node name="CSGBox3D54" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.71993, 1.50605, 2.99017)
+visible = false
 use_collision = true
 size = Vector3(2, 2, 1)
 
 [node name="CSGBox3D55" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.71993, 1.50605, 5.01446)
+visible = false
 use_collision = true
 size = Vector3(2, 2, 1)
 
 [node name="CSGBox3D56" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.21993, 1.50605, 4.01446)
+visible = false
 use_collision = true
 size = Vector3(1, 2, 3)
 
 [node name="CSGBox3D57" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.11535, 1.50605, 1.39966)
+visible = false
 use_collision = true
 size = Vector3(2, 2, 1)
 
 [node name="CSGBox3D58" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.56377, 1.50605, 2.0564)
+visible = false
 use_collision = true
 size = Vector3(1, 2, 2)
 
 [node name="CSGBox3D59" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.91872, 1.62888, 6.3479)
+visible = false
 use_collision = true
 size = Vector3(2, 2, 1)
 
 [node name="CSGBox3D60" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.58489, 1.39704, 2.54224)
+visible = false
 use_collision = true
 size = Vector3(2, 2, 1)
 
 [node name="CSGBox3D61" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.30488, 1.50605, 5.64858)
+visible = false
 use_collision = true
 size = Vector3(2, 2, 1)
 
 [node name="CSGBox3D62" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.31106, 1.50605, 4.99145)
+visible = false
 use_collision = true
 size = Vector3(1, 2, 2)
 
 [node name="CSGBox3D63" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.65269, 1.50605, -7.10624)
+visible = false
 use_collision = true
 size = Vector3(2, 2, 1)
 
 [node name="CSGBox3D64" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.15268, 1.50605, -7.60623)
+visible = false
 use_collision = true
 size = Vector3(1, 2, 2)
 
 [node name="CSGBox3D65" type="CSGBox3D" parent="Environment/Obstacles"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.14367, 1.50605, -9.47098)
+visible = false
 use_collision = true
 size = Vector3(2, 2, 2)
 
 [node name="CSGCylinder3D" type="CSGCylinder3D" parent="Environment/Obstacles"]
 transform = Transform3D(3.1, 0, 0, 0, 5.5552, 0, 0, 0, 3.1, 0, 6.06488, -2.89185)
+visible = false
 use_collision = true
 
 [node name="楼梯" parent="Environment" instance=ExtResource("3_85g3d")]
@@ -617,6 +638,64 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.49231, 0.5, 2.48034)
 
 [node name="PickupTrap4" parent="Pickup_items" instance=ExtResource("7_o6xl0")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.01331, 0.5, 4.49387)
+
+
+[node name="StaticBody3D6" parent="." instance=ExtResource("3_jkv2x")]
+transform = Transform3D(14.229, 0, 0, 0, 14.229, 0, 0, 0, 14.229, 26, 2, 27)
+
+[node name="StaticBody3D7" parent="." instance=ExtResource("4_jbj1t")]
+transform = Transform3D(21.06, 0, 0, 0, 21.06, 0, 0, 0, 21.06, 31, 0.999999, -56)
+
+[node name="StaticBody3D8" parent="." instance=ExtResource("14_jbj1t")]
+transform = Transform3D(21.1932, 0, 0, 0, 21.1932, 0, 0, 0, 21.1932, 0, 2, -20)
+
+[node name="StaticBody3D2" parent="." instance=ExtResource("14_muem4")]
+transform = Transform3D(19.1453, 0, 0, 0, 19.1453, 0, 0, 0, 19.1453, 52.994, 1.54919, -68.2647)
+
+[node name="keg_decorated" parent="." instance=ExtResource("12_eb6dy")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -55.006, 1.54919, 44.7353)
+
+[node name="keg_decorated2" parent="." instance=ExtResource("12_eb6dy")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -56, 2, 8)
+
+[node name="keg_decorated3" parent="." instance=ExtResource("12_eb6dy")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -50, 2, 24)
+
+[node name="keg_decorated4" parent="." instance=ExtResource("12_eb6dy")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -23, 1, 10)
+
+[node name="keg_decorated5" parent="." instance=ExtResource("12_eb6dy")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -22, 2, 44)
+
+[node name="keg_decorated6" parent="." instance=ExtResource("12_eb6dy")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 36, 1, -49)
+
+[node name="keg_decorated7" parent="." instance=ExtResource("12_eb6dy")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 29, 1, 35)
+
+[node name="keg_decorated8" parent="." instance=ExtResource("12_eb6dy")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 28, 1, 21)
+
+[node name="keg_decorated9" parent="." instance=ExtResource("12_eb6dy")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 50, 2, 17)
+
+[node name="keg_decorated10" parent="." instance=ExtResource("12_eb6dy")]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 55, 2, 39)
+
+[node name="keg_decorated11" parent="." instance=ExtResource("12_eb6dy")]
+transform = Transform3D(-1.74846e-07, 0, -4, 0, 4, 0, 4, 0, -1.74846e-07, 63, 1, 33)
+
+[node name="StaticBody3D" parent="." instance=ExtResource("14_muem4")]
+transform = Transform3D(18.13, 0, 0, 0, 18.13, 0, 0, 0, 18.13, 53, 2, -61)
+
+[node name="StaticBody3D3" parent="." instance=ExtResource("4_jbj1t")]
+transform = Transform3D(22.0147, 0, 0, 0, 22.0147, 0, 0, 0, 22.0147, -19, 1, 18)
+
+[node name="StaticBody3D4" parent="." instance=ExtResource("4_jbj1t")]
+transform = Transform3D(22.0147, 0, 0, 0, 22.0147, 0, 0, 0, 22.0147, -60, 1, 38)
+
+[node name="StaticBody3D5" parent="." instance=ExtResource("3_jkv2x")]
+transform = Transform3D(13.2, 0, 0, 0, 13.2, 0, 0, 0, 13.2, -54, 2, 16)
 
 [node name="3D_art_models" type="Node3D" parent="."]
 
@@ -1216,3 +1295,4 @@ transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, -58.5859)
 
 [node name="floor_wood40" parent="." instance=ExtResource("15_jbj1t")]
 transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, -20.1913, 1.94919, -74.5859)
+
