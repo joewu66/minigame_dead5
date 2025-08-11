@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://ufsq0clykqpu"]
+
+[ext_resource type="PackedScene" uid="uid://b5pp3sysgi8su" path="res://models/brackeys_3d_game_assets/dungeon_assets/props/torch_mounted.glb" id="1_d4v33"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_my26j"]
+radius = 0.238473
+
+[node name="torch" type="StaticBody3D"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="torch_mounted2" parent="." instance=ExtResource("1_d4v33")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.12873, 0.204378)
+shape = SubResource("SphereShape3D_my26j")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.435647, 0.331553)
+light_color = Color(1, 0.643137, 0.117647, 1)
+light_energy = 20.0
+omni_range = 18.0396
