@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://djk13atui72ax"]
+
+[ext_resource type="PackedScene" uid="uid://blsk7acv8rped" path="res://models/medieval/bricks.glb" id="1_d0w7u"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_gysv1"]
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="bricks2" parent="." instance=ExtResource("1_d0w7u")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("SphereShape3D_gysv1")

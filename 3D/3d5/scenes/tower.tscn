@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://ctrq0s86l322i"]
+
+[ext_resource type="PackedScene" uid="uid://dky141qfjiyn0" path="res://models/medieval/tower-edge.glb" id="1_ay4al"]
+[ext_resource type="PackedScene" uid="uid://ktsrnt50kfqx" path="res://models/medieval/tower-paint-base.glb" id="2_ktxwe"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qrbg1"]
+
+[node name="StaticBody3D" type="StaticBody3D"]
+
+[node name="tower-edge2" parent="." instance=ExtResource("1_ay4al")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="tower-paint-base2" parent="." instance=ExtResource("2_ktxwe")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1.3464, 0, 0, 0, 1.3464, 0, 0, 0, 1.3464, 0, 0, 0)
+shape = SubResource("SphereShape3D_qrbg1")
