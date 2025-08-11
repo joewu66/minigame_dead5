@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpy24koad22k3"]
+
+[ext_resource type="PackedScene" uid="uid://dhl4jl0v0fmj1" path="res://models/brackeys_3d_game_assets/dungeon_assets/props/keg_decorated.glb" id="1_n085m"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_qdkrs"]
+radius = 1.33264
+
+[node name="keg_decorated" type="StaticBody3D"]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="keg_decorated2" parent="." instance=ExtResource("1_n085m")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(4, 0, 0, 0, 4, 0, 0, 0, 4, 0, 0.718006, -0.113101)
+shape = SubResource("SphereShape3D_qdkrs")

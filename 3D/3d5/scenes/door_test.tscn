@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://bc138x2p72hhi"]
 
 [ext_resource type="PackedScene" uid="uid://cq5lh3icngbm" path="res://scenes/door_room.tscn" id="1_5qqnd"]
-[ext_resource type="PackedScene" path="res://scenes/simple_player.tscn" id="2_yvb8a"]
+[ext_resource type="PackedScene" uid="uid://c0n8l4kpqx2bo" path="res://scenes/simple_player.tscn" id="2_yvb8a"]
 
 [node name="DoorTest" type="Node3D"]
 

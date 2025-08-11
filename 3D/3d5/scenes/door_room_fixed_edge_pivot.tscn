@@ -1,6 +1,6 @@
 [gd_scene load_steps=10 format=3 uid="uid://cva0aokd8yxcp"]
 
-[ext_resource type="Script" uid="uid://drjge0pvvvea" path="res://scripts/door_edge_pivot.gd" id="1_5qqnd"]
+[ext_resource type="Script" uid="uid://drjge0pvvvea" path="res://scripts/door.gd" id="1_5qqnd"]
 [ext_resource type="Script" uid="uid://ok24w4lhsf8h" path="res://scripts/fog.gd" id="2_yvb8a"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_5rl0v"]
@@ -72,26 +72,22 @@ size = Vector3(8.88232, 3.10229, 0.1)
 transform = Transform3D(-6.55671e-08, 0, -1.5, 0, 1.5, 0, 1.5, 0, -6.55671e-08, -0.041086, 2.36122, 8.01808)
 use_collision = true
 size = Vector3(8.88232, 0.239258, 5.06494)
-
-# 修改后的门节点，使其绕长边旋转
-[node name="Door" type="Node3D" parent="."]
-transform = Transform3D(-1.5, 0, -2.26494e-07, 0, 1.5, 0, 2.26494e-07, 0, -1.5, -0.75, 1, -0.159905)
 script = ExtResource("1_5qqnd")
 
-[node name="DoorMesh" type="MeshInstance3D" parent="Door"]
+[node name="Door#DoorMesh" type="MeshInstance3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -0.255273)
 mesh = SubResource("BoxMesh_p5nt1")
 
-[node name="DoorCollision" type="StaticBody3D" parent="Door"]
+[node name="Door#DoorCollision" type="StaticBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, -0.255273)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Door/DoorCollision"]
+[node name="Door_DoorCollision#CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_u7iqx")
 
-[node name="InteractionArea" type="Area3D" parent="Door"]
+[node name="Door#InteractionArea" type="Area3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1.13954, 0.5, 0, -0.255273)
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Door/InteractionArea"]
+[node name="Door_InteractionArea#CollisionShape3D" type="CollisionShape3D" parent="."]
 shape = SubResource("BoxShape3D_0b3yd")
 
 [node name="Fog" type="Node3D" parent="."]
