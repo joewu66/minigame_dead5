@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://qqc1by0hduhw"
-path="res://.godot/imported/wood-floor.glb-a2358e56ec54b21881edd4f1f6181dda.scn"
+uid="uid://cahehvyp0ujrl"
+path="res://.godot/imported/Untitled.glb-ce3b75f3c8214c9f060305059775c389.scn"
 
 [deps]
 
-source_file="res://models/medieval/wood-floor.glb"
-dest_files=["res://.godot/imported/wood-floor.glb-a2358e56ec54b21881edd4f1f6181dda.scn"]
+source_file="res://scripts/Untitled.glb"
+dest_files=["res://.godot/imported/Untitled.glb-ce3b75f3c8214c9f060305059775c389.scn"]
 
 [params]
 
@@ -32,13 +32,6 @@ animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
-_subresources={
-"materials": {
-"planks": {
-"use_external/enabled": true,
-"use_external/path": "uid://cdmc8pb6qauxm"
-}
-}
-}
+_subresources={}
 gltf/naming_version=1
 gltf/embedded_image_handling=1
