@@ -1,13 +1,22 @@
-[gd_scene load_steps=2 format=3 uid="uid://cffu7kctwoibk"]
+[gd_scene load_steps=3 format=3 uid="uid://cffu7kctwoibk"]
 
+[ext_resource type="Script" uid="uid://c5rou3jm33pbt" path="res://addons/GBIS/addons/grid_base_inventory_system/core/view/item/drop_area_view.gd" id="1_k5gp2"]
 [ext_resource type="Script" uid="uid://b3x4mwtjmm4tp" path="res://addons/GBIS/addons/grid_base_inventory_system/core/view/container/inventory/inventory_view.gd" id="1_wdn4f"]
 
 [node name="Inventory" type="Control"]
-visible = false
 layout_mode = 3
 anchors_preset = 0
 
+[node name="DropAreaView" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_right = 2560.0
+offset_bottom = 1334.0
+script = ExtResource("1_k5gp2")
+metadata/_custom_type_script = "uid://c5rou3jm33pbt"
+
 [node name="ColorRect" type="ColorRect" parent="."]
+z_index = 5
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -24,12 +33,16 @@ scale = Vector2(1.14512, 90.1435)
 color = Color(1, 1, 1, 0.168627)
 
 [node name="InventoryView" type="Control" parent="."]
+z_index = 5
 anchors_preset = 0
 offset_left = -66.0
 offset_top = -24.0
-offset_right = -34.0
-offset_bottom = 24.0
+offset_right = 30.0
+offset_bottom = -8.0
 script = ExtResource("1_wdn4f")
-container_rows = 3
+container_name = "inv_1"
+container_columns = 6
+container_rows = 1
 base_size = 16
+stack_num_font_size = 6
 metadata/_custom_type_script = "uid://b3x4mwtjmm4tp"

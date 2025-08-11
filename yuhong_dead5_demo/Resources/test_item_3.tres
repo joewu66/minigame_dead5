@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="DamageItem" load_steps=4 format=3 uid="uid://b81x8xgdikym0"]
+
+[ext_resource type="PackedScene" uid="uid://syh3cncrrv8d" path="res://Scenes/Items/test_item_3.tscn" id="1_jc7oq"]
+[ext_resource type="Script" uid="uid://cfjtchppsgh42" path="res://Scripts/item_data/DamageItemData.gd" id="2_diijw"]
+[ext_resource type="Texture2D" uid="uid://beugnmbbyneeo" path="res://Assets/Sprites/fc8.png" id="2_diy8a"]
+
+[resource]
+script = ExtResource("2_diijw")
+drop_model = ExtResource("1_jc7oq")
+destroy_if_empty = true
+stack_size = 1
+current_amount = 1
+item_name = "item_3"
+type = "ANY"
+icon = ExtResource("2_diy8a")
+columns = 1
+rows = 1

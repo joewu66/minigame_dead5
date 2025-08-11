@@ -24,8 +24,8 @@ func can_drop() -> bool:
 	return true
 
 ## 丢弃物品时调用，需重写
-func drop() -> void:
-	push_warning("[Override this function] item [%s] dropped" % item_name)
+#func drop() -> void:
+	#push_warning("[Override this function] item [%s] dropped" % item_name)
 
 ## 物品是否能出售（是否贵重物品等）
 func can_sell() -> bool:
